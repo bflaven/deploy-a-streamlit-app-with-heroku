@@ -5,3 +5,4 @@ seaborn==0.10.1
 matplotlib==3.4.2
 plotly-express==0.4.1
 altair==4.1.0
+pip==21.3
