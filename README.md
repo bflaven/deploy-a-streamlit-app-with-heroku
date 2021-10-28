@@ -19,9 +19,26 @@ conda create --name heroku_python_getting_started_3 python=3.9.7
 ```
 
 **Get into your dev env**
+
+How to create a development environment and also list and deactivate some dev env.
+
+
 ```bash
 # go into the env
 conda activate requirements_1_heroku_python_getting_started_3
+
+# Let's say you create a environment with this version of python (3.8.3) if you need yo update the python version of your env
+# upgrade python version in your env heroku_python_getting_started_3a
+conda create --name heroku_python_getting_started_3a python=3.8.3
+conda install python=3.9.7
+
+# listing the envs
+conda info --envs
+conda remove --name requirements_1_heroku_python_getting_started_3 --all
+
+# get from the current env
+conda deactivate
+
 ```
 
 **Install packages in your dev env**
@@ -53,7 +70,7 @@ pip install matplotlib
 pip install altair
 ```
 
-**Extra info and command**
+**Extra info for the app**
 
 ```bash
 # install the packages required to work with the streamlit app
@@ -65,20 +82,6 @@ plotly-express==0.4.1
 altair==4.1.0
 ```
 
-
-```bash
-# Let's say you create a environment with this version of python (3.8.3) if you need yo update the python version of your env
-# upgrade python version in your env heroku_python_getting_started_3a
-conda create --name heroku_python_getting_started_3a python=3.8.3
-conda install python=3.9.7
-
-# listing the envs
-conda info --envs
-conda remove --name requirements_1_heroku_python_getting_started_3 --all
-
-# get from the current env
-conda deactivate
-```
 
 ### 2. change the app (tiny-streamlit-dashapp)
 The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
