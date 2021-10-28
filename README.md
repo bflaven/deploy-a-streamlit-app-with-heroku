@@ -90,11 +90,14 @@ The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
 - update in github.com
 
 **2.1 GIT FIRST**
+
+
 ```bash
 cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku/
 
 git status
 # output the changes in files
+
 git branch
 # main 
 
@@ -127,7 +130,7 @@ heroku login
 # heroku create  #done
 ```
 
-- Create a new Git repository
+- Create a new Git repository for the first time
 
 ```bash
 # go to the dir
@@ -147,26 +150,22 @@ git commit -am "remove runtime.txt"
 
 # CAUTION depend if your branch on github is master or main
 
+
+### HEROKU
 # push to heroku if your branch on github is master
 git push heroku master
-
-# push to github if your branch on github is master
-git push origin master
-
 
 # push to heroku if your branch on github is main
 git push heroku main
 
+
+### GITHUB
+# push to github if your branch on github is master
+git push origin master
+
 # push to github if your branch on github is main
 git push origin main
 
-
-
-# other changes
-git commit -am "change indent in app.py"
-git commit -am "massive update app.py + runtime.txt back"
-git commit -am "update requirements"
-git commit -am "remove things to lighten the app"
 ```
 
 
