@@ -12,8 +12,6 @@ conda deactivate
 [path]
 cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku/
 
-- working copy
-cd /Users/brunoflaven/Documents/02_copy/_packt_copycat_coder/deploy-a-streamlit-app-with-heroku_1
 
 
 [file]
