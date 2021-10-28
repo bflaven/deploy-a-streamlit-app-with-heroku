@@ -368,9 +368,6 @@ https://devcenter.heroku.com/articles/heroku-cli-commands
 - command to view all apps
 ```bash
 heroku apps --all 
-# output
-# === bflaven@gmail.com Apps
-# agile-shore-37837
 ```
 
 - command to destroy an app
@@ -378,108 +375,10 @@ heroku apps --all
 heroku apps:destroy -a agile-shore-37837 --confirm agile-shore-37837
 ```
 
-```bash
-# app to run command against
--a, --app=app          
-```
 
-! ERROR_1
-You may encounter issues, sometimes with the Command Line Tools for Xcode. For instance, I was forced to download Command Line Tools for Xcode 11.3.1
-```bash
-# remove the CommandLineTools
-sudo rm -rf /Library/Developer/CommandLineTools
-# reninstall via the .dmg Command Line Tools for Xcode 11.3.1
-```
+## Some extra GIT commands
 
-+ (2) DEPLOY A STREAMLIT DASHBOARD WITH HEROKU
-Source: deploy-a-streamlit-dashboard-with-heroku
-Source : https://gilberttanner.com/blog/deploying-your-streamlit-dashboard-with-heroku
-
-
-**Heroku deployment**
-```bash
-cd /Users/brunoflaven/Documents/02_copy/_packt_copycat_coder/deploy-a-streamlit-dashboard-with-heroku/
-```
-
-**Always use a specific env for the dev....**
-
-**1. required libraries for the app**
-```bash
-pip freeze > requirements_1_heroku_1.txt
-```
-
-Expected files for Python
-Heroku automatically identifies your app as a Python app if any of the following files are present in its root directory:
-```bash
-requirements.txt
-setup.py
-Pipfile
-```
-If none of these files is present in your app’s root directory, the Python buildpack will fail to identify your application correctly.
-
-You have to name "requirements.txt" if not, heroku will fail to identify your application correctly.
-
-```bash
-mv requirements_1_heroku_1.txt requirements.txt 
-```
-
-**2. setup.sh and Procfiles**
-Instead of a setup.py, we will create a `setup.sh` and a `Procfile` file with these command :
-
-```bash
-touch setup.sh
-touch Procfile
-```
-If you want color syntax with Visual Studio when you are editing, you can load this extension: https://marketplace.visualstudio.com/items?itemName=benspaulding.procfile
-
-You need to change the code and make these specific changes:
-```bash
-# replace the email in setup.sh (NOT REQUIRED)
-# replace the <name-of-streamlit-app>.py in Procfile ( REQUIRED)
-```
-**3.  Creating a Git repository for your application (first_app_heroku_deploy.py)**
-
-I am already using an axisting git directory, so I will put all the files ina subdirectory named "deploy-a-streamlit-app-with-heroku".
-So, I will not make a "git init" but a "git remote add ."
-
-```bash
-# simple example to create a directory
-cd /Users/brunoflaven/Documents/03_git/BlogArticlesExamples/
-mkdir deploy-a-streamlit-app-with-heroku
-
-```
-
-```bash
-git status
-cd deploy-a-streamlit-app-with-heroku
-touch readme.md
-# add the line # deploy-a-streamlit-app-with-heroku
-cd ..
-```
-
-```bash
-# no need pass this command if you have already the directory monitored by Git
-git init 
-
-# add a simple directory
-git status
-git add .
-git commit -m "add directory deploy-a-streamlit-app-with-heroku"
-git push
-
-git commit -m "add change requirements.txt deploy-a-streamlit-app-with-heroku"
-git commit -m "change pyhton version for deploy-a-streamlit-app-with-heroku"
-git commit -m "change app structure"
-
-
-# add the files
-git status
-git add .
-git commit -m "add files to deploy-a-streamlit-app-with-heroku"
-git push
-```
-
-- **how to remove a directory or a subdirectory**
+- **how to remove a directory or a subdirectory from a git directory**
 ```bash
 # This deletes from filesystem
 git rm -r one-of-the-directories
@@ -499,84 +398,31 @@ git commit -m "add files"
 git push
 ```
 
-```bash
-git repo clone bflaven/deploy-a-streamlit-app-with-heroku
-https://github.com/bflaven/deploy-a-streamlit-app-with-heroku.git
-```
+- **to add, commit and push**
 
 ```bash
-$ git checkout master
-$ git branch main
-$ git checkout main
-
-# ...develop some code...
-
 git add .
-git commit –m "some commit"
-git push
-
-cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku
-git remote add .
-git commit -m "correcting spelling mistakes in readme and add files"
-git remote push
-
-
-git remote add origin https://github.com/Career-Karma-Tutorials/demo-repository
-
-git remote add origin https://github.com/bflaven/deploy-a-streamlit-app-with-heroku
-
-git push origin your-branch
-# Pushes the changes in your local repository up to the remote repository you specified as the origin
-```
-
-```bash
-$ git add .
 # Adds the file to your local repository and stages it for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
 ```
 
 ```bash
-$ git commit -m "Add existing file"
+git commit -m "Add existing file"
 # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
 ```
 
 ```bash
-$ git push origin main
+git push origin main
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 # git push  <REMOTENAME> <BRANCHNAME> 
 # git push origin main
 ```
 
-```bash
-git commit -m "Add all files for streamlit app"
-git commit -m "change streamlit version"
-```
-
-- to check the remote branch
+- **to check the remote branch**
 ```bash
 git branch
 # output
 # * main
 ```
-
-
-
-- Existing Git repository
-For existing repositories, simply add the heroku remote
-
-```bash
-heroku git:remote -a tiny-streamlit-dashapp
-
-# git@github.com:bflaven/BlogArticlesExamples.git
-# https://github.com/bflaven/BlogArticlesExamples
-
-git remote add origin https://github.com/bflaven/deploy-a-streamlit-app-with-heroku.git
-
-git push --set-upstream origin master
-git commit -m "add deploy-a-streamlit-app-with-heroku"
-
-```
-
-
 
 **4. Installing the Heroku Command Line Interface (CLI)**
 
@@ -596,19 +442,8 @@ cd deploy-a-streamlit-app-with-heroku/
 heroku create
 ```
 
-- see the stuff
-```bash
-# https://nameless-woodland-72201.herokuapp.com/ | https://git.heroku.com/nameless-woodland-72201.git
-```
 
-```bash
-clone https://github.com/<UserName>/<your-git-repo>.git
-cd <your-local-git-repo>
-```
-
-
-
-- Create a new Git repository
+- **Create a new Git repository**
 Initialize a git repository in a new or existing directory
 ```bash
 cd deploy-a-streamlit-app-with-heroku/
@@ -618,13 +453,13 @@ git status
 heroku git:remote -a nameless-woodland-72201
 ```
 
-- Specify a Buildpack Version
+- **Specify a Buildpack Version**
 ```bash
 heroku buildpacks:set heroku/python
 ```
 
 
-- Deploy your application
+- **Deploy your application**
 Commit your code to the repository and deploy it to Heroku using Git.
 ```bash
 # push your app
@@ -638,36 +473,11 @@ git commit -am "remove from main dir"
 git push
 ```
 
-- Existing Git repository
+- **Existing Git repository**
 For existing repositories, just simply add the heroku remote
-
 
 ```bash
 heroku git:remote -a nameless-woodland-72201
-```
-
-- check the application example url
-https://nameless-woodland-72201.herokuapp.com/
-
-
-
-**ERROR_1**
-``` bash
------> Building on the Heroku-20 stack
------> Determining which buildpack to use for this app
- !     No default language could be detected for this app.
-			HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
-			See https://devcenter.heroku.com/articles/buildpacks
- !     Push failed
-```
-
-**ERROR_2**
-``` bash
------> Building on the Heroku-20 stack
------> Using buildpack: heroku/python
------> App not compatible with buildpack: https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/python.tgz
-       More info: https://devcenter.heroku.com/articles/buildpacks#detection-failure
- !     Push failed
 ```
 
 ``` bash
