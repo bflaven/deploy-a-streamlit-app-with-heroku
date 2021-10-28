@@ -1,7 +1,5 @@
 # deploy-a-streamlit-app-with-heroku
-yet another heroku deployment streamlit application directory...
-
-## My deploiment's version instructions
+yet another heroku deployment streamlit application directory... Some of the commands required to deplo yo heroku a streamlit app.
 
 ### 1. Create your environment with Conda
 
