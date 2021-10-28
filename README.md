@@ -602,8 +602,8 @@ heroku create
 ```
 
 ```bash
-clone https://github.com/<UserName>/mohrs_circle.git
-cd mohrs_circle
+clone https://github.com/<UserName>/<your-git-repo>.git
+cd <your-local-git-repo>
 ```
 
 
@@ -639,14 +639,14 @@ git push
 ```
 
 - Existing Git repository
-For existing repositories, simply add the heroku remote
+For existing repositories, just simply add the heroku remote
 
 
 ```bash
 heroku git:remote -a nameless-woodland-72201
 ```
 
-- check the application
+- check the application example url
 https://nameless-woodland-72201.herokuapp.com/
 
 
