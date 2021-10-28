@@ -678,14 +678,23 @@ git push heroku master
 
 # RESSOURCES
 - [https://www.jquery-az.com/list-branches-git/](https://www.jquery-az.com/list-branches-git/)
+
 - [https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
+
 - [https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository)
+
 - [https://tiny-streamlit-dashapp.herokuapp.com/](https://tiny-streamlit-dashapp.herokuapp.com/)
+
 - [https://www.geeksforgeeks.org/deploy-python-flask-app-on-heroku/](https://www.geeksforgeeks.org/deploy-python-flask-app-on-heroku/)
+
 - [https://pythonforundergradengineers.com/streamlit-app-with-bokeh.html](https://pythonforundergradengineers.com/streamlit-app-with-bokeh.html)
+
 - [https://dash.plotly.com/deployment](https://dash.plotly.com/deployment)
+
 - [https://devcenter.heroku.com/articles/git#deploying-code](https://devcenter.heroku.com/articles/git#deploying-code)
+
 - [https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-python](https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-python)
+
 - [https://github.com/TannerGilbert/Tutorials/tree/master/Streamlit/Deploy-Application-with-Heroku](https://github.com/TannerGilbert/Tutorials/tree/master/Streamlit/Deploy-Application-with-Heroku)
 
 
