@@ -5,37 +5,45 @@ yet another heroku deployment streamlit application directory...
 
 ### 1. Create your environment with Conda
 
+**Go to the dir**
 ```bash
 # go to your directory
 cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku/
 
 ```
 
-
+**Create your dev env with conda**
 ```bash
 # create the env for your streamlit app
 conda create --name heroku_python_getting_started_3 python=3.9.7
 ```
 
-
+**Get into your dev env**
 ```bash
 # go into the env
 conda activate requirements_1_heroku_python_getting_started_3
 ```
 
+**Install packages in your dev env**
 ```bash
-# install the packages
+# install the packages in the env
 pip install streamlit
 pip install watchdog
 ```
 
+**Save python requirements in a file name `requirements.txt`**
 ```bash
 # show what the requirements
 pip freeze > requirements_1_heroku_python_getting_started_3.txt
 pip freeze > requirements_2_heroku_python_getting_started_3.txt
 pip freeze > requirements_3_heroku_python_getting_started_3.txt
+
+# rename the last version with the correct name requirements.txt, heroku only accept the filename requirements.txt
+mv requirements_1_heroku_python_getting_started_3.txt requirements.txt
+
 ```
 
+**Install other packages in your dev env required by your app**
 ```bash
 pip install pandas
 pip install numpy
@@ -44,6 +52,8 @@ pip install plotly-express
 pip install matplotlib
 pip install altair
 ```
+
+**Extra info and command**
 
 ```bash
 # install the packages required to work with the streamlit app
