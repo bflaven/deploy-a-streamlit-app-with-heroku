@@ -176,21 +176,27 @@ In the file runtime.txt, add the correct version of pyhton you are using.
 python-3.9.7
 ```
 
-## The example given by heroku (INSTALL HEROKU-CLI AND DEPLOY PYTHON APP WITH HEROKU)
+## The example given by heroku: install heroku-cli and deploy python app with heroku
 
 **(1.1) Install the Heroku CLI**
-- requires Git installed
-It supposed that Git is already installed on your computer. Check in the console with git --version
-If Git is not installed, please do install it whith homebrew
+- It requires Git installed
 
---- You simply do
+```bash
+# It supposed that Git is already installed on your computer. Check in the console with 
+
+git --version
+
+# If Git is not installed, please do install it whith homebrew
+```
+
+- To install Git with homebrew
 ```bash
 brew install git
 # To confirm, open a new terminal window/tab and type
 git --version
 ```
 
-In this step you’ll install the Heroku Command Line Interface (CLI). You use the CLI to manage and scale your applications, provision add-ons, view your application logs, and run your application locally.
+In this step you'll install the Heroku Command Line Interface (CLI). You use the CLI to manage and scale your applications, provision add-ons, view your application logs, and run your application locally.
 
 ```bash
 brew doctor 
@@ -209,7 +215,7 @@ heroku login
 
 **(1.3) Take the default app**
 
-- clone the project
+- clone the project given by heroku
 
 ```bash
 git clone https://github.com/heroku/python-getting-started.git heroku-python-getting-started
