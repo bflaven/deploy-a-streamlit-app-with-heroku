@@ -144,6 +144,7 @@ The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
 - deploy to heroku
 
 **4.1 Build your app with streamlit**
+
 It does not have to be sophisticated app as for the moment we want to learn how to deploy on platform such as Heroku or Streamlit.
 
 **An advice: grab any simple app on GitHub, create your own Streamlit app or take the one in this directory but stay simple for the moment.**
