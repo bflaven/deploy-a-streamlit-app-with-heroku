@@ -63,8 +63,6 @@ def main():
 	""" A simple attempt for heroku"""
 	st.title('Attempt streamlit-dashboard app on Heroku')
 	st.write('enable some libraries :: streamlit, pandas, numpy, matplotlib')
-	st.markdown('**HELLO YOUTUBE**')
-
  
 	df = pd.DataFrame(
             np.random.randn(45, 3),
