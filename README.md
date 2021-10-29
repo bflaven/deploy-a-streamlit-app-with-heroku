@@ -211,7 +211,7 @@ git add .
 # add a commit with a message
 git commit -am "remove runtime.txt"
 
-# push to heroku
+# push to heroku because my branch is main
 git push heroku main
 
 
