@@ -2,13 +2,14 @@
 yet another heroku deployment streamlit application directory... Some of the commands required to deploy a streamlit app on heroku or on Streamlit.
 
 
-**It requires few requirements before starti to deploy both on heroku or on Streamlit:**
+**It requires few requirements before starting to deploy both on Heroku or on Streamlit:**
 
 - Install Homebrew locally and make it accessible through the Mac console (Free) at [https://brew.sh/](https://brew.sh/)
 - Install Git locally and make it accessible through the Mac console (Free) at [https://git-scm.com/download/mac](https://git-scm.com/download/mac)
 - Create an account on Github (Free) at [https://github.com/](https://github.com/)
 - Create an account on Heroku (Free) at [https://signup.heroku.com/](https://signup.heroku.com/)
 - Create an account on Streamlit (Free) at [https://share.streamlit.io/](https://share.streamlit.io/)
+
 
 
 ### 1. Install Homebrew for Mac
@@ -18,6 +19,11 @@ yet another heroku deployment streamlit application directory... Some of the com
 # https://brew.sh/
 # to launch the Homebrew install, you can run the following command
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# check the install
+brew --version
+
+
 ```
 
 
