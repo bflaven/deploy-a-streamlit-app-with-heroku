@@ -59,7 +59,7 @@ Source :: https://docs.brew.sh/Shell-Completion
 heroku --version
 ```
 
-### 3. Create your environment with Conda
+### 4. Create your environment with Conda
 
 **Go to the dir**
 ```bash
@@ -142,20 +142,20 @@ altair==4.1.0
 ```
 
 
-### 4. Deploy to heroku (tiny-streamlit-dashapp)
+### 5. Deploy to heroku (tiny-streamlit-dashapp)
 The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
 
 - build your app with streamlit
 - update in github.com
 - deploy to heroku
 
-**4.1 Build your app with streamlit**
+**5.1 Build your app with streamlit**
 
 It does not have to be sophisticated app as for the moment we want to learn how to deploy on platform such as Heroku or Streamlit.
 
 **An advice: grab any simple app on GitHub, create your own Streamlit app or take the one in this directory but stay simple for the moment.**
 
-**4.2 Commit on GitHub with Git**
+**5.2 Commit on GitHub with Git**
 
 
 ```bash
@@ -179,7 +179,7 @@ git push origin main
 ```
 
 
-**4.3 Deploy on HEROKU with Heroku CLI**
+**5.3 Deploy on HEROKU with Heroku CLI**
 
 - Login the Heroku CLI
 ```bash
@@ -230,8 +230,6 @@ git push origin main
 
 ```
 
-
-
 In the file runtime.txt, add the correct version of python you are using.
 
 ```
@@ -239,6 +237,8 @@ python-3.9.7
 ```
 
 ## The example given by heroku: install heroku-cli and deploy python app with heroku
+
+**Some of the steps extracted from a tutorial given by Heroku to deploy a sample app. The sample app is not a streamlit one, it is a dash application.**
 
 **(1.1) Install the Heroku CLI**
 - It requires Git installed
@@ -430,7 +430,7 @@ heroku run python manage.py shell
 heroku run bash
 # type "$ exit" to exit from the terminal
 ```
-**(1.14) More command for Heroku CLI Commands**
+**(1.15) More command for Heroku CLI Commands**
 https://devcenter.heroku.com/articles/heroku-cli-commands
 
 - command to view all apps
