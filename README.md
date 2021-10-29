@@ -139,10 +139,16 @@ altair==4.1.0
 ### 4. Deploy to heroku (tiny-streamlit-dashapp)
 The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
 
-- deploy to heroku
+- build your app with streamlit
 - update in github.com
+- deploy to heroku
 
-**4.1 Commit on GitHub with Git**
+**4.1 Build your app with streamlit**
+It does not have to be sophisticated app as for the moment we want to learn how to deploy on platform such as Heroku or Streamlit.
+
+**An advice: grab any simple app on GitHub, create your own Streamlit app or take the one in this directory but stay simple for the moment.**
+
+**4.2 Commit on GitHub with Git**
 
 
 ```bash
@@ -154,7 +160,7 @@ git status
 git branch
 # main 
 
-# commit changes
+# commit changes example
 git add .
 git commit -am "update README.md"
 
@@ -163,7 +169,7 @@ git push origin main
 ```
 
 
-**4.2 Deploy on HEROKU with Heroku CLI**
+**4.3 Deploy on HEROKU with Heroku CLI**
 
 - Login the Heroku CLI
 ```bash
