@@ -62,6 +62,8 @@ heroku --version
 ### 4. Create your environment with Conda
 
 **Go to the dir**
+It is just I found easier to be in same git directory to create my environment with Conda because I know better what are the packages required by the streamlit app.
+
 ```bash
 # go to your directory
 cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku/
@@ -70,8 +72,12 @@ cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku/
 
 **Create your dev env with conda**
 ```bash
+
+# listing the envs
+conda info --envs
+
 # create the env for your streamlit app
-conda create --name heroku_python_getting_started_3 python=3.9.7
+conda create --name deploy_getting_started python=3.9.7
 ```
 
 **Get into your dev env**
@@ -80,13 +86,6 @@ How to create a development environment and also list and deactivate some dev en
 
 
 ```bash
-
-# listing the envs
-conda info --envs
-
-# create your env for your streamlit
-conda create --name deploy_getting_started python-3.9.7
-
 
 # go into the env
 conda activate deploy_getting_started
