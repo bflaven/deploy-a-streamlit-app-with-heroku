@@ -1,5 +1,5 @@
 # deploy-a-streamlit-app-with-heroku
-yet another heroku deployment streamlit application directory... Some of the commands required to deploy a streamlit app on heroku or on Streamlit.
+Yet another heroku deployment streamlit application directory... Some of the commands required to deploy a streamlit app on Heroku.
 
 
 **The streamlit app deployed from this directory is available at https://tiny-streamlit-dashapp.herokuapp.com/**
