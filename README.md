@@ -80,8 +80,15 @@ How to create a development environment and also list and deactivate some dev en
 
 
 ```bash
+
+# listing the envs
+conda info --envs
+
+# create your env for your streamlit
+conda create --name deploy_getting_started python-3.9.7
+
+
 # go into the env
-conda activate heroku_python_getting_started_3
 conda activate deploy_getting_started
 
 
