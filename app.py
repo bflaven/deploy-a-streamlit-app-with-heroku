@@ -63,7 +63,7 @@ def detectVersion():
 
 def main():
 	""" A simple attempt for heroku"""
-	st.title('HELLO Attempt streamlit-dashboard app on Heroku')
+	st.title('Attempt streamlit-dashboard app on Heroku')
 	st.write('enable some libraries :: streamlit, pandas, numpy, matplotlib')
  
 	df = pd.DataFrame(
