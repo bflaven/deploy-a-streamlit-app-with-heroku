@@ -193,7 +193,7 @@ git init
 # My app is called: tiny-streamlit-dashapp
 heroku git:remote -a tiny-streamlit-dashapp
 
-# for one change... if you make
+# for any change just type this command
 git add .
 
 # add a commit with a message
