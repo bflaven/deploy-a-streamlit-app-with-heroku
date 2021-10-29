@@ -210,6 +210,11 @@ git add .
 
 # add a commit with a message
 git commit -am "remove runtime.txt"
+
+# push to heroku
+git push heroku main
+
+
 ```
 
 
