@@ -115,7 +115,7 @@ The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
 - deploy to heroku
 - update in github.com
 
-**3.1 Commit on GIT**
+**3.1 Commit on GitHub with Git**
 
 
 ```bash
@@ -136,44 +136,34 @@ git push origin main
 ```
 
 
-**3.2 Deploy on HEROKU**
-- Login the Heroku CLI
-```bash
-heroku login
-```
-
-```bash
-git add .
-git commit -am "update app and requirements"
-# push to heroku
-git push heroku main
-```
-
+**3.2 Deploy on HEROKU with Heroku CLI**
 
 - Login the Heroku CLI
 ```bash
 heroku login
-# heroku create  #done
 ```
 
 - Create a new Git repository for the first time
-
 ```bash
 # go to the dir
 cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku/ 
+
 # you have probably installed before Git on your computer
 git init 
 
-# push your app with the name given by heroku
+# push your app with the name given by heroku that have been created on heroku
 heroku git:remote -a tiny-streamlit-dashapp
 
 # for one change... if you make
 git add .
 # add a commit with a message
 git commit -am "remove runtime.txt"
+```
 
 
+**Caution: one thing to remember it is the branch name that you are using to push both on github, heroku**
 
+```bash
 # CAUTION depend if your branch on github is master or main
 
 
