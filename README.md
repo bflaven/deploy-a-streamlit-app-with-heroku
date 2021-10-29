@@ -1,6 +1,8 @@
 # deploy-a-streamlit-app-with-heroku
 yet another heroku deployment streamlit application directory... Some of the commands required to deploy a streamlit app on heroku or on Streamlit.
 
+## How-to deploy to Heroku with Heroku-CLI
+
 
 **It requires few requirements before starting to deploy both on Heroku or on Streamlit:**
 
