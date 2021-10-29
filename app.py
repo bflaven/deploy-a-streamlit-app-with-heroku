@@ -41,7 +41,7 @@ pip freeze > requirements_3.txt
 
 
 
-
+change for heroku YT tutorial
 
 
 """
@@ -51,7 +51,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+# my_app.py
 
 def detectVersion():
     st.sidebar.markdown('**VERSIONS**')
