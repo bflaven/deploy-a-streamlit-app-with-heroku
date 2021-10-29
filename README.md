@@ -153,8 +153,10 @@ It does not have to be sophisticated app as for the moment we want to learn how 
 
 
 ```bash
+# go to your dir
 cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku/
 
+# checkout status
 git status
 # output the changes in files
 
@@ -167,6 +169,7 @@ git commit -am "update README.md"
 
 # first push to git
 git push origin main
+
 ```
 
 
@@ -174,6 +177,7 @@ git push origin main
 
 - Login the Heroku CLI
 ```bash
+# login to Heroku
 heroku login
 ```
 
@@ -185,11 +189,13 @@ cd /Users/brunoflaven/Documents/03_git/deploy-a-streamlit-app-with-heroku/
 # you have probably installed before Git on your computer
 git init 
 
-# push your app with the name given by heroku that have been created on heroku
+# push your app with the name given by heroku that have been created on heroku 
+# My app is called: tiny-streamlit-dashapp
 heroku git:remote -a tiny-streamlit-dashapp
 
 # for one change... if you make
 git add .
+
 # add a commit with a message
 git commit -am "remove runtime.txt"
 ```
