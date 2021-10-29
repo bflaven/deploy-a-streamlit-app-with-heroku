@@ -25,8 +25,25 @@ brew install git
 git --version
 ```
 
+### 2. Install Heroku CLI Using Homebrew
 
-### 2. Create your environment with Conda
+In this step you'll install the Heroku Command Line Interface (CLI). You use the CLI to manage and scale your applications, provision add-ons, view your application logs, and run your application locally.
+
+```bash
+brew doctor 
+brew update
+brew install heroku/brew/heroku
+heroku autocomplete
+```
+
+Source :: https://docs.brew.sh/Shell-Completion
+
+**Testing Heroku CLI**
+```bash
+heroku --version
+```
+
+### 3. Create your environment with Conda
 
 **Go to the dir**
 ```bash
@@ -109,13 +126,13 @@ altair==4.1.0
 ```
 
 
-### 3. Deploy to heroku (tiny-streamlit-dashapp)
+### 4. Deploy to heroku (tiny-streamlit-dashapp)
 The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
 
 - deploy to heroku
 - update in github.com
 
-**3.1 Commit on GitHub with Git**
+**4.1 Commit on GitHub with Git**
 
 
 ```bash
@@ -136,7 +153,7 @@ git push origin main
 ```
 
 
-**3.2 Deploy on HEROKU with Heroku CLI**
+**4.2 Deploy on HEROKU with Heroku CLI**
 
 - Login the Heroku CLI
 ```bash
