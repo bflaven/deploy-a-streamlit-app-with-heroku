@@ -23,6 +23,8 @@ yet another heroku deployment streamlit application directory... Some of the com
 # check the install
 brew --version
 
+# Add a mistake here that will delete
+
 
 ```
 
