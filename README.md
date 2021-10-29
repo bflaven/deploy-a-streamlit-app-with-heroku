@@ -4,14 +4,24 @@ yet another heroku deployment streamlit application directory... Some of the com
 
 **It requires few requirements before starti to deploy both on heroku or on Streamlit:**
 
-
-- Install Git locally and make it accessible through the console. (Free)
+- Install Homebrew locally and make it accessible through the Mac console (Free) at [https://brew.sh/](https://brew.sh/)
+- Install Git locally and make it accessible through the Mac console (Free) at [https://git-scm.com/download/mac](https://git-scm.com/download/mac)
 - Create an account on Github (Free) at [https://github.com/](https://github.com/)
 - Create an account on Heroku (Free) at [https://signup.heroku.com/](https://signup.heroku.com/)
 - Create an account on Streamlit (Free) at [https://share.streamlit.io/](https://share.streamlit.io/)
 
 
-### 1. Install Git Using Homebrew
+### 1. Install Homebrew for Mac
+
+```bash
+# It supposed that Homebrew is already installed on your computer. 
+# https://brew.sh/
+# to launch the Homebrew install, you can run the following command
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+
+### 2. Install Git Using Homebrew
 
 To install Git, we will use Homebrew, the package management system for Mac.
 
@@ -25,7 +35,7 @@ brew install git
 git --version
 ```
 
-### 2. Install Heroku CLI Using Homebrew
+### 3. Install Heroku CLI Using Homebrew
 
 In this step you'll install the Heroku Command Line Interface (CLI). You use the CLI to manage and scale your applications, provision add-ons, view your application logs, and run your application locally.
 
