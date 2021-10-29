@@ -11,8 +11,22 @@ yet another heroku deployment streamlit application directory... Some of the com
 - Create an account on Streamlit (Free) at [https://share.streamlit.io/](https://share.streamlit.io/)
 
 
+### 1. Install Git Using Homebrew
 
-### 1. Create your environment with Conda
+To install Git, we will use Homebrew, the package management system for Mac.
+
+Run the following brew command in the terminal:
+
+```bash
+brew install git
+# Then, check the Git version to verify the installation:
+
+# to check the git install
+git --version
+```
+
+
+### 2. Create your environment with Conda
 
 **Go to the dir**
 ```bash
@@ -95,13 +109,13 @@ altair==4.1.0
 ```
 
 
-### 2. change the app (tiny-streamlit-dashapp)
+### 3. Deploy to heroku (tiny-streamlit-dashapp)
 The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
 
 - deploy to heroku
 - update in github.com
 
-**2.1 Commit on GIT**
+**3.1 Commit on GIT**
 
 
 ```bash
@@ -122,7 +136,7 @@ git push origin main
 ```
 
 
-**2.2 Deploy on HEROKU**
+**3.2 Deploy on HEROKU**
 - Login the Heroku CLI
 ```bash
 heroku login
@@ -201,7 +215,7 @@ git --version
 # If Git is not installed, please do install it whith homebrew
 ```
 
-- To install Git with homebrew
+- To install Git with homebrew if it is not already done!
 ```bash
 brew install git
 # To confirm, open a new terminal window/tab and type
