@@ -42,7 +42,7 @@ pip freeze > requirements_3.txt
 
 
 change for heroku YT tutorial
-
+git push heroku main
 
 """
 # require in this file
@@ -63,7 +63,7 @@ def detectVersion():
 
 def main():
 	""" A simple attempt for heroku"""
-	st.title('Attempt streamlit-dashboard app on Heroku')
+	st.title('HELLO Attempt streamlit-dashboard app on Heroku')
 	st.write('enable some libraries :: streamlit, pandas, numpy, matplotlib')
  
 	df = pd.DataFrame(
