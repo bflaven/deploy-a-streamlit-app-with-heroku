@@ -23,7 +23,7 @@ How to create a development environment and also list and deactivate some dev en
 
 ```bash
 # go into the env
-conda activate requirements_1_heroku_python_getting_started_3
+conda activate heroku_python_getting_started_3
 
 # Let's say you create a environment with this version of python (3.8.3) if you need yo update the python version of your env
 # upgrade python version in your env heroku_python_getting_started_3a
@@ -32,7 +32,7 @@ conda install python=3.9.7
 
 # listing the envs
 conda info --envs
-conda remove --name requirements_1_heroku_python_getting_started_3 --all
+conda remove --name heroku_python_getting_started_3b --all
 
 # get from the current env
 conda deactivate
@@ -87,7 +87,7 @@ The app name is `tiny-streamlit-dashapp`. We will perform 2 actions:
 - deploy to heroku
 - update in github.com
 
-**2.1 GIT FIRST**
+**2.1 Commit on GIT**
 
 
 ```bash
@@ -108,7 +108,7 @@ git push origin main
 ```
 
 
-**2.2 HEROKU SECOND**
+**2.2 Deploy on HEROKU**
 - Login the Heroku CLI
 ```bash
 heroku login
@@ -168,7 +168,7 @@ git push origin main
 
 
 
-In the file runtime.txt, add the correct version of pyhton you are using.
+In the file runtime.txt, add the correct version of python you are using.
 
 ```
 python-3.9.7
