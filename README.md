@@ -377,6 +377,7 @@ heroku logs --tail
 ```
 
 **(1.8)  Define a Procfile**
+
 Use a Procfile, a text file in the root directory of your application, to explicitly declare what command should be executed to start your app.
 
 The Procfile in the example app you deployed looks like this:
@@ -390,6 +391,7 @@ This declares a single process type, web, and the command needed to run it. The 
 Procfiles can contain additional process types. For example, you might declare one for a background worker process that processes items off of a queue.
 
 **(1.9) Scale the app**
+
 You can check how many dynos are running using the ps command:
 
 - excercice to scale up and down
@@ -401,13 +403,15 @@ heroku ps:scale web=1
 ```
 
 **(1.10) Declare app dependencies (locally)**
+
 ```bash
 pip install -r requirements.txt
 pip list
 ```
 
 **(1.11) Run the app locally**
-! The app is almost ready to start locally. Django uses local assets, so first, you’ll need to run collectstatic:
+
+The app is almost ready to start locally. Django uses local assets, so first, you’ll need to run collectstatic:
 python manage.py collectstatic
 
 ```bash
@@ -417,6 +421,7 @@ heroku local web
 
 
 **(1.12) Make an change in the application**
+
 In python-getting-started/hello/templates/index.html
 change the H1
 ```bash
@@ -431,12 +436,14 @@ heroku local web
 ```
 
 **(1.13) Provision add-ons**
+
 ```bash
 heroku addons:create papertrail
 heroku addons
 heroku addons:open papertrail
 ```
 **(1.14) Start a console**
+
 - do not forget to type exit
 ```bash
 heroku run python manage.py shell
