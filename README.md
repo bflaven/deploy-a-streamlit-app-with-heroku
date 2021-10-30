@@ -578,6 +578,25 @@ heroku git:remote -a <heroku-project-name>
 git push heroku master
 ```
 
+
+# VIDEOS
+
+- [Video #1 Part 1 - Streamlit application requirements and installation](https://www.youtube.com/watch?v=d_n5BO-zrAI)
+[![Video #1 Part 1 - Streamlit application requirements and installation](streamlit_heroku_1.png)](https://www.youtube.com/watch?v=d_n5BO-zrAI)
+
+- [Video #2 Part 2 - Install modules in your development environment and launch the Streamlit application](https://www.youtube.com/watch?v=Ul2wQm8N2-M)
+[![Video #2 Part 2 - Install modules in your development environment and launch the Streamlit application](streamlit_heroku_2.png)](https://www.youtube.com/watch?v=Ul2wQm8N2-M)
+
+- [Video #3 Part 3 - Using Git in the Mac Console to update your Streamlit application](https://www.youtube.com/watch?v=DXlMrGcPEN4)
+[![Video #3 Part 3 - Using Git in the Mac Console to update your Streamlit application](streamlit_heroku_3.png)](https://www.youtube.com/watch?v=DXlMrGcPEN4)
+
+- [Video #4 Part 4 - Connect to Heroku with Heroku CLI & deploy your Streamlit application](https://www.youtube.com/watch?v=Q_f-WoLYTxs)
+[![Video #4 Part 4 - Connect to Heroku with Heroku CLI & deploy your Streamlit application](streamlit_heroku_4.png)](https://www.youtube.com/watch?v=Q_f-WoLYTxs)
+
+- [Video #5 Part 5 - All-in-one on deploying your Streamlit application on Streamlit's platform](https://www.youtube.com/watch?v=Py8yAUbVwcc)
+[![Video #5 Part 5 - All-in-one on deploying your Streamlit application on Streamlit's platform](streamlit_on_streamlit_5.png)](https://www.youtube.com/watch?v=Py8yAUbVwcc)
+
+
 # RESSOURCES
 - [https://www.jquery-az.com/list-branches-git/](https://www.jquery-az.com/list-branches-git/)
 
